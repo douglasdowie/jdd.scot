@@ -1,0 +1,120 @@
+:root {
+    color-scheme: light dark;
+
+    --border: 0.2rem;
+    --border-radius: 1.2rem;
+    --colour-background: light-dark(ghostwhite, #1B263B);
+    --colour-content: light-dark(lightgray, #415A77);
+    --colour-contrast: #FF9800;
+    --colour-primary: light-dark(black, white);
+    --colour-secondary: light-dark(white, black);
+    --margin: 3%;
+    --padding-large: 10px;
+    --padding-medium: 5px;
+    --padding-small: 3px;
+    --padding-xlarge: 15px;
+}
+
+body {
+    background-color: var(--colour-background);
+    color: var(--colour-primary);
+    margin: 0;
+    text-align: center;
+}
+
+footer {
+    color: var(--colour-primary);
+    margin-top: var(--margin);
+}
+
+nav {
+    background-image: linear-gradient(to right, var(--colour-secondary), var(--colour-background));
+    border-bottom: var(--border) solid var(--colour-primary);
+    padding-bottom: var(--padding-small);
+    padding-top: var(--padding-small);
+}
+
+a {
+    color: var(--colour-primary);
+    text-decoration: none;
+}
+
+.intro {
+    align-content: center;
+    background-color: var(--colour-content);
+    border: var(--border) solid var(--colour-secondary);
+    border-radius: var(--border-radius);
+    color: var(--colour-primary);
+    margin-left: var(--margin);
+    margin-right: var(--margin);
+    padding: var(--padding-large);
+    text-align: justify;
+}
+
+.link {
+    background-color:  var(--colour-contrast);
+    border: var(--border) solid var(--colour-secondary);
+    border-radius: var(--border-radius);
+    color: var(--colour-secondary);
+    font-weight: bolder;
+    height: 40px;
+    padding: var(--padding-large);
+    vertical-align: center;
+    width: 40px;
+}
+
+.link:focus-visible, .link:hover {
+    border: var(--border) solid var(--colour-primary);
+}
+
+.lost {
+    margin: var(--margin);
+    padding-top: var(--padding-large);
+    text-align: center;
+}
+
+.skip {
+  position: absolute;
+  left: -10000px;
+  top: auto;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+}
+
+.skip:focus {
+  position: static;
+  width: auto;
+  height: auto;
+}
+
+@keyframes blink {
+    50% {
+        opacity: 0;
+    }
+}
+
+#cmd {
+    animation-duration: 1.25s;
+    animation-name: blink;
+    animation-iteration-count: infinite;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  #cmd {
+    animation: none;
+  }
+}
+
+#header {
+    background-image: linear-gradient(to bottom, var(--colour-content), var(--colour-background));
+    padding-top: var(--padding-large);
+}
+
+#header > h1 {
+    display: inline;
+}
+
+#initial {
+    color: var(--colour-contrast);
+}

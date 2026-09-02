@@ -1,0 +1,47 @@
+---
+date: Last Modified
+---
+
+{% extends 'base.njk' %}
+
+{% block nav %}
+            <a href="#introduction">Introduction</a>&nbsp;/
+            <a href="#links">Links</a>
+{% endblock %}
+
+
+{% block content %}
+            <section>
+                <h3 id="introduction">Introduction</h3>
+                <p class="intro">
+                    Hello! I'm Douglas, a Software Engineer based in Scotland. This is my wee bit of the internet. After
+                    three and a half years leading a fantastic Data Engineering team (Nessie), I am back coding. This
+                    follows a successful multi-year modernisation of our data pipelines and infrastructure. After taking
+                    stock, the move back to being an individual contributor was the right one. What connects these
+                    chapters is my focus on craft. This website's (iterative) creation is my ongoing personal
+                    development project. Feel free to reach out.
+                </p>
+                <p class="contact">
+                    <a href="mailto:hello@jdd.scot" rel="me">
+                        <img class="link" src="images/envelope.svg" alt="Email" height="40" width="40">
+                    </a>
+                </p>
+            </section>
+            <section>
+                <h3 id="links">Links</h3>
+                <div>
+                    <a href="https://github.com/douglasdowie" target="_blank" rel="external noopener">
+                        <img class="link" src="images/github.svg" alt="GitHub logo" height="40" width="40">
+                    </a>
+                    <a href="https://gitlab.com/douglasdowie" target="_blank" rel="external noopener">
+                        <img class="link" src="images/gitlab.svg" alt="GitLab logo" height="40" width="40">
+                    </a>
+                    <a href="https://linkedin.com/in/douglasdowie" target="_blank" rel="external noopener">
+                        <img class="link" src="images/linkedin.svg" alt="LinkedIn logo" height="40" width="40">
+                    </a>
+                    <a href="https://orcid.org/0009-0004-1322-0798" target="_blank" rel="external noopener">
+                        <img class="link" src="images/orcid.svg" alt="ORCID logo" height="40" width="40">
+                    </a>
+                </div>
+            </section>
+{% endblock %}

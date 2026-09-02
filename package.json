@@ -1,0 +1,30 @@
+{
+  "name": "jdd.scot",
+  "homepage": "https://jdd.scot",
+  "description": "My personal website",
+  "engines": {
+    "node": "24.20.0",
+    "npm": "11.19.0"
+  },
+  "scripts": {
+    "build": "npx @11ty/eleventy",
+    "lint": "npx stylelint **/*.css",
+    "lint:fix": "npx stylelint **/*.css ---fix",
+    "start": "npx @11ty/eleventy --serve"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com:douglasdowie/jdd.scot.git"
+  },
+  "author": "J. Douglas Dowie",
+  "license": "UNLICENSED",
+  "private": true,
+  "type": "module",
+  "dependencies": {
+    "@11ty/eleventy": "3.1.6"
+  },
+  "devDependencies": {
+    "stylelint": "17.14.1",
+    "stylelint-config-standard": "40.0.0"
+  }
+}

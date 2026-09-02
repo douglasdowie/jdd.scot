@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en-GB">
+    <head>
+        <link rel="icon" type="image/svg+xml" href="/images/favicon.svg">
+        <link rel="me" href="https://dl.acm.org/profile/81502795581">
+        <link rel="me" href="https://github.com/douglasdowie">
+        <link rel="me" href="https://gitlab.com/douglasdowie">
+        <link rel="me" href="https://linkedin.com/in/douglasdowie">
+        <link rel="me" href="https://orcid.org/0009-0004-1322-0798">
+        <link rel="stylesheet" type="text/css" href="/css/jdd.css">
+        <meta charset="UTF-8">
+        <meta name="author" content="J. Douglas Dowie">
+        <meta
+            name="description"
+            content="The personal website of J. Douglas Dowie, a software engineer based in Scotland moving back into
+            the role of individual contributor."
+        >
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script type="application/ld+json">
+            {
+              "@context": "https://schema.org",
+              "@type": "Person",
+              "email": "mailto:hello@jdd.scot",
+              "homeLocation": {
+                "@type": "Place",
+                "address": {
+                    "@type": "PostalAddress",
+                    "addressCountry": "GB",
+                    "addressRegion": "GB-SCT"
+                }
+              },
+              "jobTitle": "Software Engineer",
+              "name": "J. Douglas Dowie",
+              "sameAs": [
+                "https://dl.acm.org/profile/81502795581",
+                "https://github.com/douglasdowie",
+                "https://gitlab.com/douglasdowie",
+                "https://linkedin.com/in/douglasdowie",
+                "https://orcid.org/0009-0004-1322-0798"
+              ],
+              "url": "https://jdd.scot"
+            }
+        </script>
+        <title>J. Douglas Dowie</title>
+    </head>
+    <body>
+        <header>
+            <a href="#main" class="skip">Skip to main content</a>
+        </header>
+        <nav id="nav" aria-label="Primary">
+            {% block nav %}
+                {{ nav | safe }}
+            {% endblock %}
+        </nav>
+        <main id="main">
+            <section>
+                <div id="header">
+                    <span aria-hidden="true">&gt;&nbsp;</span>
+                    <h1>
+                        <span id="initial">J.</span> Douglas Dowie
+                    </h1>
+                    <span id="cmd" aria-hidden="true">|</span>
+                    <h2>Software Engineer</h2>
+                </div>
+            </section>
+            {% block content %}
+                {{ content | safe }}
+            {% endblock %}
+        </main>
+        <footer>
+            <p id="copyright">&copy;&nbsp;Copyright J. Douglas Dowie</p>
+            <a href="#nav">... and back again</a>
+        </footer>
+    </body>
+</html>
