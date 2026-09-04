@@ -32,10 +32,10 @@ jobs:
         uses: actions/cache@caa296126883cff596d87d8935842f9db880ef25 # 5.1.0
         with:
           path: ~/.npm
-          key: ${{ runner.os }}-node-${{ hashFiles('**/package.json') }}
+          key: ${{ runner.os }}-node-${{ hashFiles('**/package-lock.json') }}
 
       - name: Install
-        run: npm ci
+        run: npm ci --cache .npm --prefer-offline
 
       - name: Lint
         run: npm run lint
