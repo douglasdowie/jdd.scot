@@ -2,10 +2,9 @@
 <html lang="en-GB">
     <head>
         <link rel="icon" type="image/svg+xml" href="/images/favicon.svg">
-        <link rel="me" href="https://dl.acm.org/profile/81502795581">
-        <link rel="me" href="https://github.com/douglasdowie">
-        <link rel="me" href="https://linkedin.com/in/douglasdowie">
-        <link rel="me" href="https://orcid.org/0009-0004-1322-0798">
+        {%- for link in me %}
+        <link rel="me" href="{{ link }}">
+        {%- endfor %}
         <link rel="stylesheet" type="text/css" href="/css/jdd.css">
         <meta charset="UTF-8">
         <meta name="author" content="J. Douglas Dowie">
@@ -31,10 +30,9 @@
               "jobTitle": "Software Engineer",
               "name": "J. Douglas Dowie",
               "sameAs": [
-                "https://dl.acm.org/profile/81502795581",
-                "https://github.com/douglasdowie",
-                "https://linkedin.com/in/douglasdowie",
-                "https://orcid.org/0009-0004-1322-0798"
+                {%- for link in me %}
+                "{{ link | indent(12) }}"{% if not loop.last %},{% endif %}
+                {%- endfor %}
               ],
               "url": "https://jdd.scot"
             }
