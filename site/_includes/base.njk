@@ -44,7 +44,7 @@
             <a href="#main" class="skip">Skip to main content</a>
         </header>
         <nav id="nav" aria-label="Primary">
-            {% block nav %}
+            {%- block nav %}
                 {{ nav | safe }}
             {% endblock %}
         </nav>
@@ -59,7 +59,7 @@
                     <h2>Software Engineer</h2>
                 </div>
             </section>
-            {% block content %}
+            {%- block content %}
                 {{ content | safe }}
             {% endblock %}
         </main>
