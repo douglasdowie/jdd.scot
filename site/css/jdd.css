@@ -39,7 +39,7 @@ a {
     text-decoration: none;
 }
 
-.intro {
+.about {
     align-content: center;
     background-color: var(--colour-content);
     border: var(--border) solid var(--colour-secondary);
