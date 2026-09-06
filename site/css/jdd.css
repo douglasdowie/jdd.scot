@@ -15,6 +15,11 @@
     --padding-xlarge: 15px;
 }
 
+a {
+    color: var(--colour-primary);
+    text-decoration: none;
+}
+
 body {
     background-color: var(--colour-background);
     color: var(--colour-primary);
@@ -25,18 +30,6 @@ body {
 footer {
     color: var(--colour-primary);
     margin-top: var(--margin);
-}
-
-nav {
-    background-image: linear-gradient(to right, var(--colour-secondary), var(--colour-background));
-    border-bottom: var(--border) solid var(--colour-primary);
-    padding-bottom: var(--padding-small);
-    padding-top: var(--padding-small);
-}
-
-a {
-    color: var(--colour-primary);
-    text-decoration: none;
 }
 
 .about {
@@ -73,21 +66,6 @@ a {
     text-align: center;
 }
 
-.skip {
-  position: absolute;
-  left: -10000px;
-  top: auto;
-  width: 1px;
-  height: 1px;
-  overflow: hidden;
-}
-
-.skip:focus {
-  position: static;
-  width: auto;
-  height: auto;
-}
-
 @keyframes blink {
     50% {
         opacity: 0;
@@ -108,7 +86,6 @@ a {
 
 #header {
     background-image: linear-gradient(to bottom, var(--colour-content), var(--colour-background));
-    padding-top: var(--padding-large);
 }
 
 #header > h1 {
