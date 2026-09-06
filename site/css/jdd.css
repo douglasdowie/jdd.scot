@@ -32,6 +32,10 @@ footer {
     margin-top: var(--margin);
 }
 
+h2 {
+    margin-top: 0;
+}
+
 .about {
     align-content: center;
     background-color: var(--colour-content);
