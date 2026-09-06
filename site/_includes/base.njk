@@ -42,32 +42,22 @@
         <title>J. Douglas Dowie</title>
     </head>
     <body>
-        <header>
-            <a href="#main" class="skip">Skip to main content</a>
+        <header id="header">
+            <a href="#main" aria-label="Skip to main >">&gt;&nbsp;</a>
+            <h1>
+                <span id="initial">J.</span> Douglas Dowie
+            </h1>
+            <span id="cmd" aria-hidden="true">|</span>
+            <h2>Software Engineer</h2>
         </header>
-        <nav id="nav" aria-label="Primary">
-            {%- block nav %}
-                {{ nav | safe }}
-            {% endblock %}
-        </nav>
-        <main id="main">
-            <section>
-                <div id="header">
-                    <span aria-hidden="true">&gt;&nbsp;</span>
-                    <h1>
-                        <span id="initial">J.</span> Douglas Dowie
-                    </h1>
-                    <span id="cmd" aria-hidden="true">|</span>
-                    <h2>Software Engineer</h2>
-                </div>
-            </section>
+        <main id="main" tabindex="-1">
             {%- block content %}
                 {{ content | safe }}
             {% endblock %}
         </main>
         <footer>
             <p id="copyright">&copy;&nbsp;Copyright J. Douglas Dowie</p>
-            <a href="#nav">... and back again</a>
+            <a href="#main">... and back again</a>
         </footer>
     </body>
 </html>
