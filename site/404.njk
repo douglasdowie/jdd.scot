@@ -6,10 +6,20 @@ permalink: 404.html
 {% extends 'base.njk' %}
 
 {% block content %}
-            <div class="content">
-                <p class="lost">
-                    Not all those who 404
-                    <a href="/" class="link">are lost</a>
+            <section>
+                <h3 id="error" aria-hidden="true">
+                    &gt;&nbsp;<abbr title="J. Douglas Dowie">jdd</abbr> --get
+                    <del>redacted</del>
+                </h3>
+                <p class="content">
+                    <code>
+                        Sorry, that does not compute! Please select an option:
+                        <br>
+                        <br>
+                        <span aria-hidden="true">&nbsp;&nbsp;&nbsp;&nbsp;[1]</span>
+                        <a href="/">Return to the homepage</a>
+                        <span class="cmd" aria-hidden="true">|</span>
+                    </code>
                 </p>
-            </div>
+            </section>
 {%- endblock %}
