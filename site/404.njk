@@ -5,6 +5,10 @@ permalink: 404.html
 
 {% extends 'base.njk' %}
 
+{% block robots %}
+        <meta name="robots" content="noindex">
+{%- endblock %}
+
 {% block content %}
             <section>
                 <h3 id="error" aria-hidden="true">

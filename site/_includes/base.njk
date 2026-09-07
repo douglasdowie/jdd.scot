@@ -1,7 +1,9 @@
 <!DOCTYPE html>
 <html lang="en-GB">
     <head>
-        <link rel="canonical" href="https://jdd.scot">
+        {%- block canonical -%}
+            {{ canonical | safe }}
+        {%- endblock %}
         <link rel="icon" type="image/svg+xml" href="images/favicon.svg">
         {%- for link in me %}
         <link rel="me" href="{{ link }}">
@@ -10,12 +12,15 @@
         <meta charset="UTF-8">
         <meta name="author" content="J. Douglas Dowie">
         <meta name="description" content="The personal website of J. Douglas Dowie, a Software Engineer based in Scotland. Previous roles include Engineering Manager and Research Assistant.">
+        {%- block robots -%}
+            {{ robots | safe }}
+        {%- endblock %}
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta property="og:description" content="The personal website of J. Douglas Dowie, a Software Engineer based in Scotland. Previous roles include Engineering Manager and Research Assistant.">
         <meta property="og:locale" content="en-GB">
         <meta property="og:title" content="J. Douglas Dowie">
         <meta property="og:type" content="website">
         <meta property="og:url" content="https://jdd.scot">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <script type="application/ld+json">
             {
               "@context": "https://schema.org",
