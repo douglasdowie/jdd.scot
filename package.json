@@ -10,7 +10,8 @@
     "build": "npx @11ty/eleventy",
     "lint": "npx stylelint **/*.css",
     "lint:fix": "npx stylelint **/*.css --fix",
-    "start": "npx @11ty/eleventy --serve"
+    "start": "npx @11ty/eleventy --serve",
+    "test": "node --test"
   },
   "repository": {
     "type": "git",

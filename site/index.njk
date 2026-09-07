@@ -5,41 +5,49 @@ date: Last Modified
 {% extends 'base.njk' %}
 
 {% block canonical %}
-        <link rel="canonical" href="https://jdd.scot">
+        <link rel="canonical" href="{{ jdd.website }}">
 {%- endblock %}
+
+{% block link -%}
+{% include "link.njk" %}
+{%- endblock -%}
+
+{% block meta %}
+{% include "meta.njk" %}
+{%- endblock -%}
 
 {% block content %}
             <section>
                 <h3 id="about">
-                    <span aria-hidden="true">&gt;&nbsp;<abbr title="J. Douglas Dowie">jdd</abbr> --</span>about
+                    <span aria-hidden="true">&gt;&nbsp;<abbr title="{{ jdd.name }}">jdd</abbr> --</span>about
                 </h3>
                 <p class="content">
                     Hello! I'm Douglas, a Software Engineer based in Scotland. This is my wee bit of the internet. After
                     three and a half years leading a fantastic Data Engineering team (Nessie, at Skyscanner), I am back
-                    coding. This follows a successful multi-year modernisation of our data pipelines and infrastructure.
-                    After taking stock, the move back to being an individual contributor was the right one. What
-                    connects these chapters is my focus on craft. This website's (iterative) creation is my ongoing
-                    personal development project. Feel free to reach out.
+                    coding. This follows the successful multi-year modernisation of our data pipelines and
+                    infrastructure. After taking stock, the move back to being an individual contributor was the right
+                    one. What connects these chapters is my focus on craft. This website's (iterative) creation is my
+                    ongoing personal development project. Feel free to reach out.
                 </p>
             </section>
             <section>
                 <h3 id="links">
-                    <span aria-hidden="true">&gt;&nbsp;<abbr title="J. Douglas Dowie">jdd</abbr> --</span>links
+                    <span aria-hidden="true">&gt;&nbsp;<abbr title="{{ jdd.name }}">jdd</abbr> --</span>links
                 </h3>
                 <div>
-                    <a href="https://github.com/douglasdowie" target="_blank" rel="me external noopener">
+                    <a href="{{ jdd.me.github }}" target="_blank" rel="me external noopener">
                         <img class="link" src="images/github.svg" alt="GitHub logo" height="39" width="39">
                     </a>
                     &nbsp;
-                    <a href="mailto:hello@jdd.scot" rel="me">
+                    <a href="{{ jdd.email }}" rel="me">
                         <img class="link" src="images/envelope.svg" alt="Email" height="39" width="39">
                     </a>
                     &nbsp;
-                    <a href="https://linkedin.com/in/douglasdowie" target="_blank" rel="me external noopener">
+                    <a href="{{ jdd.me.linkedin }}" target="_blank" rel="me external noopener">
                         <img class="link" src="images/linkedin.svg" alt="LinkedIn logo" height="39" width="39">
                     </a>
                     &nbsp;
-                    <a href="https://orcid.org/0009-0004-1322-0798" target="_blank" rel="me external noopener">
+                    <a href="{{ jdd.me.orcid }}" target="_blank" rel="me external noopener">
                         <img class="link" src="images/orcid.svg" alt="ORCID logo" height="39" width="39">
                     </a>
                 </div>
