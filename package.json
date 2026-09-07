@@ -9,7 +9,7 @@
   "scripts": {
     "build": "npx @11ty/eleventy",
     "lint": "npx stylelint **/*.css",
-    "lint:fix": "npx stylelint **/*.css ---fix",
+    "lint:fix": "npx stylelint **/*.css --fix",
     "start": "npx @11ty/eleventy --serve"
   },
   "repository": {
