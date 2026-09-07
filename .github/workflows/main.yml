@@ -8,15 +8,9 @@ on:
     branches:
       - main
 
-concurrency:
-  group: "pages"
-  cancel-in-progress: false
-
 jobs:
   build:
     runs-on: ubuntu-slim
-    permissions:
-      contents: write
     concurrency:
       group: ${{ github.workflow }}-${{ github.ref }}
     steps:
@@ -26,13 +20,9 @@ jobs:
       - name: Setup Node
         uses: actions/setup-node@820762786026740c76f36085b0efc47a31fe5020 # 7.0.0
         with:
+          cache: "npm"
+          cache-dependency-path: "package-lock.json"
           node-version-file: "package.json"
-
-      - name: Cache
-        uses: actions/cache@55cc8345863c7cc4c66a329aec7e433d2d1c52a9 # 6.1.0
-        with:
-          path: ~/.npm
-          key: ${{ runner.os }}-node-${{ hashFiles('**/package-lock.json') }}
 
       - name: Install
         run: npm ci
@@ -49,16 +39,16 @@ jobs:
           path: _site/
 
   deploy:
-      if: ${{ github.ref_name == github.event.repository.default_branch }}
-      needs: build
-      runs-on: ubuntu-slim
-      permissions:
-        pages: write
-        id-token: write
-      environment:
-        name: github-pages
-        url: ${{ steps.deployment.outputs.page_url }}
-      steps:
-        - name: Deploy Pages
-          id: deployment
-          uses: actions/deploy-pages@368f82528645a54fb793d4d04e342629a3f51346 # 5.0.1
+    if: ${{ github.ref_name == github.event.repository.default_branch }}
+    needs: build
+    runs-on: ubuntu-slim
+    permissions:
+      pages: write
+      id-token: write
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - name: Deploy Pages
+        id: deployment
+        uses: actions/deploy-pages@368f82528645a54fb793d4d04e342629a3f51346 # 5.0.1
