@@ -1,0 +1,17 @@
+{
+  "country": "GB",
+  "description": "The personal website of J. Douglas Dowie, a Software Engineer based in Scotland. Previous roles include Engineering Manager and Research Assistant.",
+  "email": "mailto:hello@jdd.scot",
+  "locale": "en-GB",
+  "me": {
+    "acm": "https://dl.acm.org/profile/81502795581",
+    "github": "https://github.com/douglasdowie",
+    "gitlab": "https://gitlab.com/douglasdowie",
+    "linkedin": "https://linkedin.com/in/douglasdowie",
+    "orcid": "https://orcid.org/0009-0004-1322-0798"
+  },
+  "name": "J. Douglas Dowie",
+  "region": "GB-SCT",
+  "title": "Software Engineer",
+  "website": "https://jdd.scot"
+}

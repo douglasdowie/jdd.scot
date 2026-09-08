@@ -12,7 +12,7 @@ permalink: 404.html
 {% block content %}
             <section>
                 <h3 id="error" aria-hidden="true">
-                    &gt;&nbsp;<abbr title="J. Douglas Dowie">jdd</abbr> --get
+                    &gt;&nbsp;<abbr title="{{ jdd.name }}">jdd</abbr> --get
                     <del>redacted</del>
                 </h3>
                 <p class="content">
@@ -24,7 +24,7 @@ permalink: 404.html
                         <a href="/">Return to the homepage</a>
                         <br>
                         <span aria-hidden="true">&nbsp;&nbsp;&nbsp;&nbsp;[2]</span>
-                        <a href="mailto:hello@jdd.scot" rel="me">Email</a>
+                        <a href="{{ jdd.email }}" rel="me">Email</a>
                         <span class="cmd" aria-hidden="true">|</span>
                     </code>
                 </p>

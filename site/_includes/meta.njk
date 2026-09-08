@@ -1,0 +1,28 @@
+        <meta property="og:description" content="{{ jdd.description }}">
+        <meta property="og:locale" content="{{ jdd.locale }}">
+        <meta property="og:title" content="{{ jdd.name }}">
+        <meta property="og:type" content="website">
+        <meta property="og:url" content="{{ jdd.website }}">
+        <script type="application/ld+json">
+            {
+              "@context": "https://schema.org",
+              "@type": "Person",
+              "email": "{{ jdd.email }}",
+              "homeLocation": {
+                "@type": "Place",
+                "address": {
+                    "@type": "PostalAddress",
+                    "addressCountry": "{{ jdd.country }}",
+                    "addressRegion": "{{ jdd.region }}"
+                }
+              },
+              "jobTitle": "{{ jdd.title }}",
+              "name": "{{ jdd.name }}",
+              "sameAs": [
+                {%- for _, link in jdd.me %}
+                "{{ link | indent(12) }}"{% if not loop.last %},{% endif %}
+                {%- endfor %}
+              ],
+              "url": "{{ jdd.website }}"
+            }
+        </script>

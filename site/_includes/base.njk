@@ -1,59 +1,34 @@
 <!DOCTYPE html>
-<html lang="en-GB">
+<html lang="{{ jdd.locale }}">
     <head>
         {%- block canonical -%}
             {{ canonical | safe }}
         {%- endblock %}
         <link rel="icon" type="image/svg+xml" href="images/favicon.svg">
-        {%- for link in me %}
-        <link rel="me" href="{{ link }}">
-        {%- endfor %}
+        {%- block link -%}
+            {{ link | safe }}
+        {%- endblock %}
         <link rel="stylesheet" type="text/css" href="css/jdd.css">
         <meta charset="UTF-8">
-        <meta name="author" content="J. Douglas Dowie">
-        <meta name="description" content="The personal website of J. Douglas Dowie, a Software Engineer based in Scotland. Previous roles include Engineering Manager and Research Assistant.">
+        <meta name="author" content="{{ jdd.name }}">
+        <meta name="description" content="{{ jdd.description }}">
         {%- block robots -%}
             {{ robots | safe }}
         {%- endblock %}
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <meta property="og:description" content="The personal website of J. Douglas Dowie, a Software Engineer based in Scotland. Previous roles include Engineering Manager and Research Assistant.">
-        <meta property="og:locale" content="en-GB">
-        <meta property="og:title" content="J. Douglas Dowie">
-        <meta property="og:type" content="website">
-        <meta property="og:url" content="https://jdd.scot">
-        <script type="application/ld+json">
-            {
-              "@context": "https://schema.org",
-              "@type": "Person",
-              "email": "mailto:hello@jdd.scot",
-              "homeLocation": {
-                "@type": "Place",
-                "address": {
-                    "@type": "PostalAddress",
-                    "addressCountry": "GB",
-                    "addressRegion": "GB-SCT"
-                }
-              },
-              "jobTitle": "Software Engineer",
-              "name": "J. Douglas Dowie",
-              "sameAs": [
-                {%- for link in me %}
-                "{{ link | indent(12) }}"{% if not loop.last %},{% endif %}
-                {%- endfor %}
-              ],
-              "url": "https://jdd.scot"
-            }
-        </script>
-        <title>J. Douglas Dowie</title>
+        {%- block meta -%}
+            {{ meta | safe }}
+        {%- endblock %}
+        <title>{{ jdd.name }}</title>
     </head>
     <body>
         <header id="header">
             <a href="#main" aria-label="Skip to main >">&gt;&nbsp;</a>
-            <h1>J. Douglas Dowie</h1>
+            <h1>{{ jdd.name }}</h1>
             <span class="cmd" aria-hidden="true">|</span>
             <h2>
                 <span aria-hidden="true">[</span>
-                Software Engineer
+                {{ jdd.title }}
                 <span aria-hidden="true">]</span>
             </h2>
         </header>
@@ -63,7 +38,7 @@
             {% endblock %}
         </main>
         <footer>
-            <p id="copyright">&copy;&nbsp;Copyright J.&nbsp;Douglas Dowie</p>
+            <p id="copyright">&copy;&nbsp;Copyright {{ jdd.name | replace(". ", ".&nbsp;") | safe }}</p>
             <a href="#main">... and back again</a>
         </footer>
     </body>
