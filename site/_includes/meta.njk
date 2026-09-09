@@ -7,7 +7,29 @@
             {
               "@context": "https://schema.org",
               "@type": "Person",
+              "alumniOf": [
+                {%- for _, degree in jdd.education %}
+                {
+                    "@type": "CollegeOrUniversity",
+                    "name": "{{ degree.university }}"
+                }{% if not loop.last %},{% endif %}
+                {%- endfor %}
+              ],
               "email": "{{ jdd.email }}",
+              "hasCredential": [
+                {%- for _, degree in jdd.education %}
+                {
+                    "@type": "EducationalOccupationalCredential",
+                    "credentialCategory": "degree",
+                    "educationalLevel": "{{ degree.level | safe }}",
+                    "name": "{{ degree.name }}",
+                    "recognizedBy": {
+                        "@type": "CollegeOrUniversity",
+                        "name": "{{ degree.university }}"
+                    }
+                }{% if not loop.last %},{% endif %}
+                {%- endfor %}
+              ],
               "homeLocation": {
                 "@type": "Place",
                 "address": {

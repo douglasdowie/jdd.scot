@@ -1,6 +1,23 @@
 {
   "country": "GB",
   "description": "The personal website of J. Douglas Dowie, a Software Engineer based in Scotland. Previous roles include Engineering Manager and Research Assistant.",
+  "education": {
+    "dundee": {
+      "level": "Bachelor's Degree",
+      "name": "BSc (Hons) Applied Computing",
+      "university": "University of Dundee"
+    },
+    "glasgow": {
+      "level": "Master's Degree",
+      "name": "MSc Software Engineering",
+      "university": "University of Glasgow"
+    },
+    "ou": {
+      "level": "Bachelor's Degree",
+      "name": "BA (Hons) Politics, Philosophy and Economics",
+      "university": "The Open University"
+    }
+  },
   "email": "mailto:hello@jdd.scot",
   "locale": "en-GB",
   "me": {
