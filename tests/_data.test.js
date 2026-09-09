@@ -41,6 +41,13 @@ describe("jdd.json", () => {
     assert.strictEqual(jdd.email, "mailto:hello@jdd.scot");
   });
 
+  test("knows", () => {
+    assert.strictEqual(jdd.knows.length, 3);
+    assert.strictEqual(jdd.knows[0], "Agile Methodologies");
+    assert.strictEqual(jdd.knows[1], "Data Engineering");
+    assert.strictEqual(jdd.knows[2], "Python");
+  });
+
   test("locale", () => {
     assert.strictEqual(jdd.locale, "en-GB");
   });
