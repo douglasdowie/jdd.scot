@@ -39,6 +39,11 @@
                 }
               },
               "jobTitle": "{{ jdd.title }}",
+              "knowsAbout": [
+                {%- for thing in jdd.knows %}
+                "{{ thing | indent(12) }}"{% if not loop.last %},{% endif %}
+                {%- endfor %}
+              ],
               "memberOf": {
                 "@type": "Organization",
                 "name": "{{ jdd.register.title }}",

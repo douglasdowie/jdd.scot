@@ -19,6 +19,11 @@
     }
   },
   "email": "mailto:hello@jdd.scot",
+  "knows": [
+    "Agile Methodologies",
+    "Data Engineering",
+    "Python"
+  ],
   "locale": "en-GB",
   "me": {
     "acm": "https://dl.acm.org/profile/81502795581",

@@ -56,7 +56,7 @@ main {
     margin-left: var(--spacing-large);
     margin-right: var(--spacing-large);
     padding: var(--spacing-small);
-    text-align: justify;
+    text-align: left;
 }
 
 .link {
