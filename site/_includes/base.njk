@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="{{ jdd.locale }}">
     <head>
+        <link rel="author" type="text/plain" href="humans.txt">
         {%- block canonical -%}
             {{ canonical | safe }}
         {%- endblock %}
@@ -40,6 +41,7 @@
         </main>
         <footer>
             <p id="copyright">&copy;&nbsp;Copyright {{ jdd.name | replace(". ", ".&nbsp;") | safe }}</p>
+            <p>(alongside <a href="humans.txt" rel="author">humans.txt</a>)</p>
             <a href="#main">... and back again</a>
         </footer>
     </body>
