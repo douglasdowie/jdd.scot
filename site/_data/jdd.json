@@ -12,6 +12,12 @@
   },
   "name": "J. Douglas Dowie",
   "region": "GB-SCT",
+  "register": {
+    "link": "https://www.bcs.org/find-a-bcs-member",
+    "name": "Register of Technology Professionals",
+    "title": "BCS, The Chartered Institute for IT",
+    "website": "https://www.bcs.org"
+  },
   "title": "Software Engineer",
   "website": "https://jdd.scot"
 }
