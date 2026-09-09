@@ -21,6 +21,22 @@ describe("jdd.json", () => {
     );
   });
 
+  test("education", () => {
+    assert.strictEqual(Object.keys(jdd.education).length, 3);
+
+    assert.strictEqual(jdd.education.dundee.level, "Bachelor's Degree");
+    assert.strictEqual(jdd.education.dundee.name, "BSc (Hons) Applied Computing");
+    assert.strictEqual(jdd.education.dundee.university, "University of Dundee");
+
+    assert.strictEqual(jdd.education.glasgow.level, "Master's Degree");
+    assert.strictEqual(jdd.education.glasgow.name, "MSc Software Engineering");
+    assert.strictEqual(jdd.education.glasgow.university, "University of Glasgow");
+
+    assert.strictEqual(jdd.education.ou.level, "Bachelor's Degree");
+    assert.strictEqual(jdd.education.ou.name, "BA (Hons) Politics, Philosophy and Economics");
+    assert.strictEqual(jdd.education.ou.university, "The Open University");
+  });
+
   test("email", () => {
     assert.strictEqual(jdd.email, "mailto:hello@jdd.scot");
   });

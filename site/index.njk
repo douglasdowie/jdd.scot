@@ -31,6 +31,17 @@ date: Last Modified
                 </p>
             </section>
             <section>
+                <h3 id="education">
+                    <span aria-hidden="true">&gt;&nbsp;<abbr title="{{ jdd.name }}">jdd</abbr> --</span>education
+                </h3>
+                <p class="content">
+                    {%- for _, degree in jdd.education %}
+                    <span aria-hidden="true">[{{ loop.index }}]</span> {{ degree.university }} &mdash; {{ degree.name }}
+                    {%- if not loop.last %}<br>{% endif %}
+                    {%- endfor %}
+                </p>
+            </section>
+            <section>
                 <h3 id="register">
                     <span aria-hidden="true">&gt;&nbsp;<abbr title="{{ jdd.name }}">jdd</abbr> --</span>register
                 </h3>
