@@ -17,6 +17,11 @@
                 }
               },
               "jobTitle": "{{ jdd.title }}",
+              "memberOf": {
+                "@type": "Organization",
+                "name": "{{ jdd.register.title }}",
+                "url": "{{ jdd.register.website }}"
+              },
               "name": "{{ jdd.name }}",
               "sameAs": [
                 {%- for _, link in jdd.me %}
