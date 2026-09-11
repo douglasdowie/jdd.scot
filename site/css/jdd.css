@@ -14,6 +14,11 @@ a {
     text-decoration: none;
 }
 
+a:focus-visible, a:hover {
+    border-bottom: var(--border) solid var(--colour-primary);
+    outline: none;
+}
+
 body {
     background-color: var(--colour-secondary);
     color: var(--colour-primary);
@@ -21,9 +26,18 @@ body {
     text-align: center;
 }
 
+figure {
+    display: inline-block;
+    margin: 0 var(--spacing-small);
+}
+
 footer {
     color: var(--colour-primary);
     margin-top: var(--spacing-small);
+}
+
+h1 {
+    display: inline;
 }
 
 h2 {
@@ -63,9 +77,7 @@ main {
     background-color: white;
     border: var(--border) solid black;
     border-radius: var(--border-radius);
-    box-shadow: 3px 3px var(--colour-primary);
-    font-weight: bolder;
-    padding: 10px;
+    padding: 8px;
 }
 
 @keyframes blink {
@@ -76,9 +88,4 @@ main {
 
 #header {
     margin-top: var(--spacing-small);
-}
-
-
-#header > h1 {
-    display: inline;
 }

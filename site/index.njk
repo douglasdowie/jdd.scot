@@ -57,21 +57,38 @@ date: Last Modified
                     <span aria-hidden="true">&gt;&nbsp;<abbr title="{{ jdd.name }}">jdd</abbr> --</span>links
                 </h3>
                 <div>
-                    <a href="{{ jdd.me.github }}" target="_blank" rel="me external noopener">
-                        <img class="link" src="images/github.svg" alt="GitHub logo" height="39" width="39">
-                    </a>
-                    &nbsp;
-                    <a href="{{ jdd.email }}" rel="me">
-                        <img class="link" src="images/envelope.svg" alt="Email" height="39" width="39">
-                    </a>
-                    &nbsp;
-                    <a href="{{ jdd.me.linkedin }}" target="_blank" rel="me external noopener">
-                        <img class="link" src="images/linkedin.svg" alt="LinkedIn logo" height="39" width="39">
-                    </a>
-                    &nbsp;
-                    <a href="{{ jdd.me.orcid }}" target="_blank" rel="me external noopener">
-                        <img class="link" src="images/orcid.svg" alt="ORCID logo" height="39" width="39">
-                    </a>
+                    <figure>
+                        <img class="link" src="images/github.svg" alt="GitHub logo" height="42" width="42">
+                        <figcaption>
+                            <a href="{{ jdd.me.github }}" target="_blank" rel="me external noopener">
+                                GitHub
+                            </a>
+                        </figcaption>
+                    </figure>
+                    <figure>
+                        <img class="link" src="images/envelope.svg" alt="Email icon" height="42" width="42">
+                        <figcaption>
+                            <a href="{{ jdd.me.email }}" rel="me">
+                                Email
+                            </a>
+                        </figcaption>
+                    </figure>
+                    <figure>
+                        <img class="link" src="images/linkedin.svg" alt="LinkedIn logo" height="42" width="42">
+                        <figcaption>
+                            <a href="{{ jdd.me.linkedin }}" target="_blank" rel="me external noopener">
+                                LinkedIn
+                            </a>
+                        </figcaption>
+                    </figure>
+                    <figure>
+                        <img class="link" src="images/orcid.svg" alt="ORCID logo" height="42" width="42">
+                        <figcaption>
+                            <a href="{{ jdd.me.orcid }}" target="_blank" rel="me external noopener">
+                                ORCID
+                            </a>
+                        </figcaption>
+                    </figure>
                 </div>
             </section>
 {%- endblock %}
