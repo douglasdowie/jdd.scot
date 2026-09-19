@@ -12,6 +12,10 @@ date: Last Modified
 {% include "link.njk" %}
 {%- endblock -%}
 
+{% block robots %}
+        <meta name="robots" content="index, follow">
+{%- endblock %}
+
 {% block meta %}
 {% include "meta.njk" %}
 {%- endblock -%}
