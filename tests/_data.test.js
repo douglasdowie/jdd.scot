@@ -16,8 +16,8 @@ describe("jdd.json", () => {
   test("description", () => {
     assert.strictEqual(
         jdd.description,
-        "The personal website of J. Douglas Dowie, a Software Engineer based in Scotland. Previous roles include " +
-        "Engineering Manager and Research Assistant."
+        "J. Douglas Dowie, a Software Engineer based in Scotland. A generalist with a focus on Data Engineering, " +
+        "Agile, and Python. Ex-Engineering Manager."
     );
   });
 
