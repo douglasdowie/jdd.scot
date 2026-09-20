@@ -21,6 +21,9 @@
         {%- block meta -%}
             {{ meta | safe }}
         {%- endblock %}
+        {%- block json -%}
+            {{ json | safe }}
+        {%- endblock %}
         <title>{{ jdd.name }} | {{ jdd.title }}</title>
     </head>
     <body>
