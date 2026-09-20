@@ -11,12 +11,13 @@
 
 a {
     color: var(--colour-primary);
+    font-weight: bold;
     text-decoration: none;
 }
 
 a:focus-visible, a:hover {
-    border-bottom: var(--border) solid var(--colour-primary);
     outline: none;
+    text-decoration: underline;
 }
 
 body {

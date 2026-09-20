@@ -29,7 +29,7 @@
     <body>
         <header id="header">
             <h1>
-                <a href="#main" aria-label="Skip to main">&gt;</a>
+                <a href="#main" aria-label="Skip to main" title="Skip to main">&gt;</a>
                 {{ jdd.name }}
                 <span class="cmd" aria-hidden="true">|</span>
             </h1>
@@ -47,7 +47,7 @@
         <footer>
             <p id="copyright">&copy;&nbsp;Copyright {{ jdd.name | replace(". ", ".&nbsp;") | safe }}</p>
             <p>(alongside <a href="humans.txt" target="_blank" rel="author">humans.txt</a>)</p>
-            <a href="#main">... and back again</a>
+            <a href="#main" title="Skip back to main">... and back again</a>
         </footer>
     </body>
 </html>
