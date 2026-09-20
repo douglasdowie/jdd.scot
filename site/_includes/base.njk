@@ -1,16 +1,16 @@
 <!DOCTYPE html>
 <html lang="{{ jdd.locale }}">
     <head>
-        <link rel="author" type="text/plain" href="humans.txt">
+        <link rel="author" type="text/plain" href="/humans.txt">
         {%- block canonical -%}
             {{ canonical | safe }}
         {%- endblock %}
-        <link rel="describedby" type="text/markdown" href="llms.txt">
+        <link rel="describedby" type="text/markdown" href="/llms.txt">
         <link rel="icon" type="image/svg+xml" href="images/favicon.svg">
         {%- block link -%}
             {{ link | safe }}
         {%- endblock %}
-        <link rel="stylesheet" type="text/css" href="css/jdd.css">
+        <link rel="stylesheet" type="text/css" href="/css/jdd.css">
         <meta charset="UTF-8">
         <meta name="author" content="{{ jdd.name }}">
         <meta name="description" content="{{ jdd.description }}">
@@ -46,7 +46,7 @@
         </main>
         <footer>
             <p id="copyright">&copy;&nbsp;Copyright {{ jdd.name | replace(". ", ".&nbsp;") | safe }}</p>
-            <p>(alongside <a href="humans.txt" target="_blank" rel="author">humans.txt</a>)</p>
+            <p>(alongside <a href="/humans.txt" target="_blank" rel="author">humans.txt</a>)</p>
             <a href="#main" title="Skip back to main">... and back again</a>
         </footer>
     </body>
