@@ -57,7 +57,7 @@ describe("jdd.json", () => {
     assert.strictEqual(jdd.me.acm, "https://dl.acm.org/profile/81502795581");
     assert.strictEqual(jdd.me.github, "https://github.com/douglasdowie");
     assert.strictEqual(jdd.me.gitlab, "https://gitlab.com/douglasdowie");
-    assert.strictEqual(jdd.me.linkedin, "https://linkedin.com/in/douglasdowie");
+    assert.strictEqual(jdd.me.linkedin, "https://www.linkedin.com/in/douglasdowie");
     assert.strictEqual(jdd.me.orcid, "https://orcid.org/0009-0004-1322-0798");
   });
 
