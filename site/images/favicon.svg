@@ -3,12 +3,12 @@
         rect {
             fill: white;
             stroke: black;
-            stroke-width: 16px;
+            stroke-width: 42px;
         }
         @media (prefers-color-scheme: dark) {
             rect {
                 fill: black;
-                stroke: white
+                stroke: white;
             }
         }
         text {
@@ -21,7 +21,7 @@
         }
     </style>
     <g>
-        <rect width="480" height="480" rx="50" ry="50" x="16" y="16" />
-        <text font-size="300" x="50%" y="50%" text-anchor="middle" dominant-baseline="middle">jdd</text>
+        <rect width="100%" height="100%" />
+        <text font-size="180" x="50%" y="50%" text-anchor="middle" dominant-baseline="middle">> jdd</text>
     </g>
 </svg>
