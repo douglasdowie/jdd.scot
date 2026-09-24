@@ -1,4 +1,3 @@
-# Security Policy
+# Security
 
-In the event of you identifying a security issue in this codebase, 
-please drop me an [email](mailto:hello@jdd.scot).
+Please report any security issues using GitHub's private reporting mechanism for this repository.
