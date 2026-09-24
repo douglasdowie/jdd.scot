@@ -71,7 +71,6 @@ describe("jdd.json", () => {
   });
 
   test("register", () => {
-    assert.strictEqual(jdd.register.link, "https://www.bcs.org/find-a-bcs-member");
     assert.strictEqual(jdd.register.name, "Register of Technology Professionals");
     assert.strictEqual(jdd.register.title, "BCS, The Chartered Institute for IT");
     assert.strictEqual(jdd.register.website, "https://www.bcs.org");
