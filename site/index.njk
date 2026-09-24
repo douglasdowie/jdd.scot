@@ -27,20 +27,21 @@ date: Last Modified
 {% block content %}
             <section>
                 <h3 id="about">
-                    <span aria-hidden="true">&gt;&nbsp;<abbr title="{{ jdd.name }}">jdd</abbr> --</span>about
+                    <span aria-hidden="true">&gt;&nbsp;<abbr title="{{ jdd.name }}">jdd</abbr>&nbsp;--</span>about
                 </h3>
                 <p class="content">
                     Hello! I'm Douglas, a Software Engineer based in Scotland. This is my wee bit of the internet. While
                     most of my code is proprietary, please visit GitHub for what I am building in public (including this
                     website). I am a generalist, but with a focus on Data Engineering, Agile, and Python. Craft is the
                     driving force in how I approach software. To deliver, I also draw on my three and a half years as
-                    Nessie's Engineering Manager. Our focus was modernising data pipelines (Spark, Databricks, AWS).
-                    After this, returning to coding was the right move. Feel free to reach out.
+                    <dfn title="The name of the team.">Nessie's</dfn> Engineering Manager. Our focus was modernising
+                    data pipelines (Spark, Databricks, AWS). After this, returning to coding was the right move.
+                    Feel free to reach out.
                 </p>
             </section>
             <section>
                 <h3 id="education">
-                    <span aria-hidden="true">&gt;&nbsp;<abbr title="{{ jdd.name }}">jdd</abbr> --</span>education
+                    <span aria-hidden="true">&gt;&nbsp;jdd&nbsp;--</span>education
                 </h3>
                 <p class="content">
                     {%- for _, degree in jdd.education %}
@@ -51,7 +52,7 @@ date: Last Modified
             </section>
             <section>
                 <h3 id="register">
-                    <span aria-hidden="true">&gt;&nbsp;<abbr title="{{ jdd.name }}">jdd</abbr> --</span>register
+                    <span aria-hidden="true">&gt;&nbsp;jdd&nbsp;--</span>register
                 </h3>
                 <p class="content">
                     <a href="{{ jdd.register.link }}" target="_blank" rel="external noopener">
