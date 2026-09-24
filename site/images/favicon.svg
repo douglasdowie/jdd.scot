@@ -1,27 +1,17 @@
 <svg viewBox="0 0 512 512" width="512" height="512" xmlns="http://www.w3.org/2000/svg">
     <style>
         rect {
-            fill: white;
-            stroke: black;
-            stroke-width: 42px;
-        }
-        @media (prefers-color-scheme: dark) {
-            rect {
-                fill: black;
-                stroke: white;
-            }
+            fill: black;
+            stroke: white;
+            stroke-width: 70px;
         }
         text {
-            fill: black;
-        }
-        @media (prefers-color-scheme: dark) {
-            text {
-                fill: white;
-            }
+            fill: white;
+            font-weight: bolder;
         }
     </style>
     <g>
         <rect width="100%" height="100%" />
-        <text font-size="300" x="50%" y="50%" text-anchor="middle" dominant-baseline="middle">jdd</text>
+        <text font-size="700" x="50%" y="64%" text-anchor="middle" dominant-baseline="middle">></text>
     </g>
 </svg>
