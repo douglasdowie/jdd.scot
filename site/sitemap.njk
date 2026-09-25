@@ -7,7 +7,6 @@ permalink: sitemap.xml
     {%- for page in collections.all %}
     <url>
         <loc>{{ jdd.website }}{{ page.url if page.url != "/" }}</loc>
-        <lastmod>{{ page.date.toISOString() }}</lastmod>
     </url>
     {%- endfor %}
 </urlset>
