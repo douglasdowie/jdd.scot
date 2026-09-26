@@ -6,12 +6,12 @@ permalink: 404.html
 {% extends 'base.njk' %}
 
 {% block robots %}
-        <meta name="robots" content="noindex">
+        <meta content="noindex" name="robots">
 {%- endblock %}
 
 {% block content %}
             <section>
-                <h3 id="error" aria-hidden="true">
+                <h3 aria-hidden="true" id="error">
                     &gt;&nbsp;<abbr title="{{ jdd.name }}">jdd</abbr> --get
                     <del>redacted</del>
                 </h3>
@@ -24,7 +24,7 @@ permalink: 404.html
                     <br>
                     <span aria-hidden="true">[2]</span>
                     <a href="{{ jdd.email }}" rel="me">Email</a>
-                    <span class="cmd" aria-hidden="true">|</span>
+                    <span aria-hidden="true" class="cmd">|</span>
                 </p>
             </section>
 {%- endblock %}

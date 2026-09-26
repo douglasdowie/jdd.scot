@@ -1,23 +1,23 @@
 <!DOCTYPE html>
 <html lang="{{ jdd.locale }}">
     <head>
-        <link rel="author" type="text/plain" href="/humans.txt">
+        <link href="/humans.txt" rel="author" type="text/plain">
         {%- block canonical -%}
             {{ canonical | safe }}
         {%- endblock %}
-        <link rel="describedby" type="text/markdown" href="/llms.txt">
-        <link rel="icon" type="image/svg+xml" href="images/favicon.svg">
+        <link href="/llms.txt" rel="describedby" type="text/markdown">
+        <link href="/images/favicon.svg" rel="icon" type="image/svg+xml">
         {%- block link -%}
             {{ link | safe }}
         {%- endblock %}
-        <link rel="stylesheet" type="text/css" href="/css/jdd.css">
+        <link href="/css/jdd.css" rel="stylesheet" type="text/css">
         <meta charset="UTF-8">
-        <meta name="author" content="{{ jdd.name }}">
-        <meta name="description" content="{{ jdd.description }}">
+        <meta content="{{ jdd.name }}" name="author">
+        <meta content="{{ jdd.description }}" name="description">
         {%- block robots -%}
             {{ robots | safe }}
         {%- endblock %}
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta content="width=device-width, initial-scale=1.0" name="viewport">
         {%- block meta -%}
             {{ meta | safe }}
         {%- endblock %}
@@ -28,10 +28,10 @@
     </head>
     <body>
         <header>
-            <h1>
-                <a href="#main" aria-label="Skip to main" title="Skip to main">&gt;</a>
+            <h1 id="header">
+                <a aria-label="Skip to main" href="#main" title="Skip to main">&gt;</a>
                 {{ jdd.name }}
-                <span class="cmd" aria-hidden="true">|</span>
+                <span aria-hidden="true" class="cmd">|</span>
             </h1>
             <h2>
                 <span aria-hidden="true">[</span>
@@ -44,9 +44,9 @@
                 {{ content | safe }}
             {% endblock %}
         </main>
-        <footer>
-            <p id="copyright">&copy;&nbsp;Copyright {{ jdd.name | replace(". ", ".&nbsp;") | safe }}</p>
-            <p>(alongside <a href="/humans.txt" target="_blank" rel="author">humans.txt</a>)</p>
+        <footer id="footer">
+            <p>&copy;&nbsp;Copyright {{ jdd.name | replace(". ", ".&nbsp;") | safe }}</p>
+            <p>(alongside <a href="/humans.txt" rel="author" target="_blank">humans.txt</a>)</p>
             <a href="#main" title="Skip back to main">... and back again</a>
         </footer>
     </body>

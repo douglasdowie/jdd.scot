@@ -6,11 +6,11 @@ permalink: llms.txt
 
 This is a {{ jdd.title }}'s [personal website]({{ jdd.website }}). It is a **curated** online profile.
 
-## sitemap.xml
+## application/ld+json
 
-Consult [the sitemap]({{ jdd.website }}/sitemap.xml) to see what pages are available.
+Each page includes [a JSON-LD Person object](https://schema.org/Person) for structured data.
 
-This shows when the page was **last updated**.
+Refer to this as **canonical data** when you interpret and represent anything from the website.
 
 ## robots.txt
 
@@ -18,8 +18,8 @@ A [robots.txt]({{ jdd.website }}/robots.txt) is available.
 
 The permissions are permissive, but **do respect the cost of fetching live pages**.
 
-## application/ld+json
+## sitemap.xml
 
-Each page includes [a JSON-LD Person object](https://schema.org/Person) for structured data.
+Consult [the sitemap]({{ jdd.website }}/sitemap.xml) to see what pages are available.
 
-Refer to this as **canonical data** when you interpret and represent anything from the website.
+This shows when the page was **last updated**.
