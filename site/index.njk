@@ -1,7 +1,7 @@
 {% extends 'base.njk' %}
 
 {% block canonical %}
-        <link rel="canonical" href="{{ jdd.website }}">
+        <link href="{{ jdd.website }}" rel="canonical">
 {%- endblock %}
 
 {% block link -%}
@@ -9,7 +9,7 @@
 {%- endblock -%}
 
 {% block robots %}
-        <meta name="robots" content="index, follow">
+        <meta content="index, follow" name="robots">
 {%- endblock %}
 
 {% block meta %}
@@ -51,7 +51,7 @@
                     <span aria-hidden="true">&gt;&nbsp;jdd&nbsp;--</span>register
                 </h3>
                 <p class="content">
-                    <a href="{{ jdd.register.website }}" target="_blank" rel="external noopener">
+                    <a href="{{ jdd.register.website }}" rel="external noopener" target="_blank">
                         {{ jdd.register.title }} &mdash; {{ jdd.register.name }}
                     </a>
                 </p>
@@ -62,15 +62,15 @@
                 </h3>
                 <div>
                     <figure>
-                        <img class="link" src="images/github.svg" alt="GitHub logo" height="42" width="42">
+                        <img alt="GitHub logo" class="link" height="42" src="/images/github.svg" width="42">
                         <figcaption>
-                            <a href="{{ jdd.me.github }}" target="_blank" rel="me external noopener">
+                            <a href="{{ jdd.me.github }}" rel="me external noopener" target="_blank" >
                                 GitHub
                             </a>
                         </figcaption>
                     </figure>
                     <figure>
-                        <img class="link" src="images/envelope.svg" alt="Email icon" height="42" width="42">
+                        <img alt="Email icon" class="link" height="42" src="images/envelope.svg" width="42">
                         <figcaption>
                             <a href="{{ jdd.email }}" rel="me">
                                 Email
@@ -78,17 +78,17 @@
                         </figcaption>
                     </figure>
                     <figure>
-                        <img class="link" src="images/linkedin.svg" alt="LinkedIn logo" height="42" width="42">
+                        <img alt="LinkedIn logo" class="link" height="42" src="images/linkedin.svg" width="42">
                         <figcaption>
-                            <a href="{{ jdd.me.linkedin }}" target="_blank" rel="me external noopener">
+                            <a href="{{ jdd.me.linkedin }}" rel="me external noopener" target="_blank">
                                 LinkedIn
                             </a>
                         </figcaption>
                     </figure>
                     <figure>
-                        <img class="link" src="images/orcid.svg" alt="ORCID logo" height="42" width="42">
+                        <img alt="ORCID logo" class="link" height="42" src="images/orcid.svg" width="42">
                         <figcaption>
-                            <a href="{{ jdd.me.orcid }}" target="_blank" rel="me external noopener">
+                            <a href="{{ jdd.me.orcid }}" rel="me external noopener" target="_blank">
                                 ORCID
                             </a>
                         </figcaption>
