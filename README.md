@@ -2,7 +2,11 @@
 
 [![Main](https://github.com/douglasdowie/jdd.scot/actions/workflows/main.yml/badge.svg)](https://github.com/douglasdowie/jdd.scot/actions/workflows/main.yml)
 
-My [personal website](https://jdd.scot) created using [Eleventy](https://www.11ty.dev).
+[My wee bit of the internet](https://jdd.scot), created using [Eleventy](https://www.11ty.dev).
+
+The website serves as my curated online profile. Its design is based around a CLI (command line interface). It aims for 
+high accessibility and adherence to web standards. Both established (_HTML5_, _CSS_, _robots.txt_ and _sitemap.xml_) 
+and emerging (_humans.txt_ and _llms.txt_). Supporting metadata is present.
 
 ## npm
 
