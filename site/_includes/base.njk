@@ -30,12 +30,12 @@
         <header>
             <h1 id="header">
                 <a aria-label="Skip to main" href="#main" title="Skip to main">&gt;</a>
-                {{ jdd.name }}
+                <a class="h-card" href="{{ jdd.website }}" rel="me">{{ jdd.name }}</a>
                 <span aria-hidden="true" class="cmd">|</span>
             </h1>
             <h2>
                 <span aria-hidden="true">[</span>
-                {{ jdd.title }}
+                <span class="p-job-title">{{ jdd.title }}</span>
                 <span aria-hidden="true">]</span>
             </h2>
         </header>
