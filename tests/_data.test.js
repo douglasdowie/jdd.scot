@@ -53,10 +53,11 @@ describe("jdd.json", () => {
   });
 
   test("me", () => {
-    assert.strictEqual(Object.keys(jdd.me).length, 6);
+    assert.strictEqual(Object.keys(jdd.me).length, 7);
     assert.strictEqual(jdd.me.acm, "https://dl.acm.org/profile/81502795581");
     assert.strictEqual(jdd.me.github, "https://github.com/douglasdowie");
     assert.strictEqual(jdd.me.gitlab, "https://gitlab.com/douglasdowie");
+    assert.strictEqual(jdd.me.jdd, "https://jdd.co.scot");
     assert.strictEqual(jdd.me.linkedin, "https://www.linkedin.com/in/douglasdowie");
     assert.strictEqual(jdd.me.opencollective, "https://opencollective.com/douglasdowie");
     assert.strictEqual(jdd.me.orcid, "https://orcid.org/0009-0004-1322-0798");
