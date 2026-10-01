@@ -33,7 +33,6 @@ figure {
 }
 
 footer {
-    color: var(--colour-primary);
     margin-top: var(--spacing-small);
 }
 
@@ -72,14 +71,10 @@ main {
 }
 
 .content {
-    align-content: center;
-    background-color: var(--colour-secondary);
     border: var(--border) solid var(--colour-primary);
     border-radius: var(--border-radius);
     box-shadow: 3px 3px var(--colour-primary);
-    color: var(--colour-primary);
-    margin-left: var(--spacing-large);
-    margin-right: var(--spacing-large);
+    margin: 0 var(--spacing-large);
     padding: var(--spacing-small);
     text-align: left;
 }
