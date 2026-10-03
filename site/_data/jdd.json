@@ -1,29 +1,7 @@
 {
-  "country": "GB",
+  "alias": "Douglas Dowie",
   "description": "J. Douglas Dowie, a Software Engineer focused on Data Engineering, Agile, and Python. Ex-Engineering Manager. Scotland-based.",
-  "education": {
-    "dundee": {
-      "level": "Bachelor's Degree",
-      "name": "BSc (Hons) Applied Computing",
-      "university": "University of Dundee"
-    },
-    "glasgow": {
-      "level": "Master's Degree",
-      "name": "MSc Software Engineering",
-      "university": "University of Glasgow"
-    },
-    "ou": {
-      "level": "Bachelor's Degree",
-      "name": "BA (Hons) Politics, Philosophy and Economics",
-      "university": "The Open University"
-    }
-  },
   "email": "mailto:hello@jdd.scot",
-  "knows": [
-    "Agile Methodologies",
-    "Data Engineering",
-    "Python"
-  ],
   "locale": "en-GB",
   "me": {
     "acm": "https://dl.acm.org/profile/81502795581",
@@ -35,7 +13,6 @@
     "orcid": "https://orcid.org/0009-0004-1322-0798"
   },
   "name": "J. Douglas Dowie",
-  "region": "GB-SCT",
   "register": {
     "name": "Register of Technology Professionals",
     "title": "BCS, The Chartered Institute for IT",

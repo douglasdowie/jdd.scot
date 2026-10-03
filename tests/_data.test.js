@@ -9,8 +9,8 @@ describe("jdd.json", () => {
     jdd = JSON.parse(fs.readFileSync("site/_data/jdd.json"));
   });
 
-  test("country", () => {
-    assert.strictEqual(jdd.country, "GB");
+  test("alias", () => {
+    assert.strictEqual(jdd.alias, "Douglas Dowie");
   });
 
   test("description", () => {
@@ -21,31 +21,8 @@ describe("jdd.json", () => {
     );
   });
 
-  test("education", () => {
-    assert.strictEqual(Object.keys(jdd.education).length, 3);
-
-    assert.strictEqual(jdd.education.dundee.level, "Bachelor's Degree");
-    assert.strictEqual(jdd.education.dundee.name, "BSc (Hons) Applied Computing");
-    assert.strictEqual(jdd.education.dundee.university, "University of Dundee");
-
-    assert.strictEqual(jdd.education.glasgow.level, "Master's Degree");
-    assert.strictEqual(jdd.education.glasgow.name, "MSc Software Engineering");
-    assert.strictEqual(jdd.education.glasgow.university, "University of Glasgow");
-
-    assert.strictEqual(jdd.education.ou.level, "Bachelor's Degree");
-    assert.strictEqual(jdd.education.ou.name, "BA (Hons) Politics, Philosophy and Economics");
-    assert.strictEqual(jdd.education.ou.university, "The Open University");
-  });
-
   test("email", () => {
     assert.strictEqual(jdd.email, "mailto:hello@jdd.scot");
-  });
-
-  test("knows", () => {
-    assert.strictEqual(jdd.knows.length, 3);
-    assert.strictEqual(jdd.knows[0], "Agile Methodologies");
-    assert.strictEqual(jdd.knows[1], "Data Engineering");
-    assert.strictEqual(jdd.knows[2], "Python");
   });
 
   test("locale", () => {
@@ -65,10 +42,6 @@ describe("jdd.json", () => {
 
   test("name", () => {
     assert.strictEqual(jdd.name, "J. Douglas Dowie");
-  });
-
-  test("region", () => {
-    assert.strictEqual(jdd.region, "GB-SCT");
   });
 
   test("register", () => {

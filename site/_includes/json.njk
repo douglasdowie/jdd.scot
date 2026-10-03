@@ -1,63 +1,26 @@
         <script type="application/ld+json">
           {
             "@context": "https://schema.org",
-            "@type": "Person",
-            "alumniOf": [
-              {%- for _, degree in jdd.education %}
+            "@graph": [
               {
-                "@type": "CollegeOrUniversity",
-                "name": "{{ degree.university }}"
-              }{% if not loop.last %},{% endif %}
-              {%- endfor %}
-            ],
-            "email": "{{ jdd.email }}",
-            "hasCredential": [
-              {%- for _, degree in jdd.education %}
-              {
-                "@type": "EducationalOccupationalCredential",
-                "credentialCategory": "degree",
-                "educationalLevel": "{{ degree.level | safe }}",
-                "name": "{{ degree.name }}",
-                "recognizedBy": {
-                  "@type": "CollegeOrUniversity",
-                  "name": "{{ degree.university }}"
+                "@type": "ProfilePage",
+                "mainEntity": {
+                  "@type": "Person",
+                  "alternateName": "{{ jdd.alias }}",
+                  "description": "{{ jdd.description }}",
+                  "name": "{{ jdd.name }}",
+                  "sameAs": [
+                    {%- for _, link in jdd.me %}
+                    "{{ link | indent(12) }}"{% if not loop.last %},{% endif %}
+                    {%- endfor %}
+                  ]
                 }
-              }{% if not loop.last %},{% endif %}
-              {%- endfor %}
-            ],
-            "homeLocation": {
-              "@type": "Place",
-              "address": {
-                "@type": "PostalAddress",
-                "addressCountry": "{{ jdd.country }}",
-                "addressRegion": "{{ jdd.region }}"
+              },
+              {
+                "@type" : "WebSite",
+                "name" : "{{ jdd.name }}",
+                "url" : "{{ jdd.website }}"
               }
-            },
-            "jobTitle": "{{ jdd.title }}",
-            "knowsAbout": [
-              {%- for thing in jdd.knows %}
-              "{{ thing | indent(12) }}"{% if not loop.last %},{% endif %}
-              {%- endfor %}
-            ],
-            "memberOf": {
-              "@type": "Organization",
-              "name": "{{ jdd.register.title }}",
-              "url": "{{ jdd.register.website }}"
-            },
-            "name": "{{ jdd.name }}",
-            "sameAs": [
-              {%- for _, link in jdd.me %}
-              "{{ link | indent(12) }}"{% if not loop.last %},{% endif %}
-              {%- endfor %}
-            ],
-            "url": "{{ jdd.website }}"
-          }
-        </script>
-        <script type="application/ld+json">
-          {
-            "@context" : "https://schema.org",
-            "@type" : "WebSite",
-            "name" : "{{ jdd.name }} | {{ jdd.title }}",
-            "url" : "{{ jdd.website }}"
+            ]
           }
         </script>
