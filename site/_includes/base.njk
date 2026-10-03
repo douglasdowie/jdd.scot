@@ -1,15 +1,15 @@
 <!DOCTYPE html>
 <html lang="{{ jdd.locale }}">
     <head>
+        <link href="/css/jdd.css" rel="stylesheet" type="text/css">
         <link href="/humans.txt" rel="author" type="text/plain">
+        <link href="/images/favicon.svg" rel="icon" type="image/svg+xml">
         {%- block canonical -%}
             {{ canonical | safe }}
         {%- endblock %}
-        <link href="/images/favicon.svg" rel="icon" type="image/svg+xml">
         {%- block link -%}
             {{ link | safe }}
         {%- endblock %}
-        <link href="/css/jdd.css" rel="stylesheet" type="text/css">
         <meta charset="UTF-8">
         <meta content="{{ jdd.name }}" name="author">
         <meta content="{{ jdd.description }}" name="description">
