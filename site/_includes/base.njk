@@ -11,6 +11,7 @@
             {{ link | safe }}
         {%- endblock %}
         <meta charset="UTF-8">
+        <meta content="{{ eleventy.generator }}" name="generator">
         <meta content="{{ jdd.name }}" name="author">
         <meta content="{{ jdd.description }}" name="description">
         {%- block robots -%}
