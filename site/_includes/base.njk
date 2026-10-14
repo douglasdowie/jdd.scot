@@ -1,30 +1,30 @@
 <!DOCTYPE html>
 <html lang="{{ jdd.locale }}">
     <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>{{ jdd.name }} | {{ jdd.title }}</title>
         <link href="/css/jdd.css" rel="stylesheet" type="text/css">
-        <link href="/humans.txt" rel="author" type="text/plain">
         <link href="/images/favicon.svg" rel="icon" type="image/svg+xml">
+        <link href="/humans.txt" rel="author" type="text/plain">
         {%- block canonical -%}
             {{ canonical | safe }}
         {%- endblock %}
         {%- block link -%}
             {{ link | safe }}
         {%- endblock %}
-        <meta charset="UTF-8">
-        <meta content="{{ eleventy.generator }}" name="generator">
-        <meta content="{{ jdd.name }}" name="author">
-        <meta content="{{ jdd.description }}" name="description">
+        <meta name="author" content="{{ jdd.name }}">
+        <meta name="description" content="{{ jdd.description }}">
+        <meta name="generator" content="{{ eleventy.generator }}">
         {%- block robots -%}
             {{ robots | safe }}
         {%- endblock %}
-        <meta content="width=device-width, initial-scale=1.0" name="viewport">
         {%- block meta -%}
             {{ meta | safe }}
         {%- endblock %}
         {%- block json -%}
             {{ json | safe }}
         {%- endblock %}
-        <title>{{ jdd.name }} | {{ jdd.title }}</title>
     </head>
     <body>
         <header>
