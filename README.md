@@ -2,12 +2,11 @@
 
 [![Main](https://github.com/douglasdowie/jdd.scot/actions/workflows/main.yml/badge.svg)](https://github.com/douglasdowie/jdd.scot/actions/workflows/main.yml)
 
-[My wee bit of the internet](https://jdd.scot) (the domain being my initials). The website serves as a combination of my 
-online identity hub and a curated profile. It is also a personal development project for all aspects of creating and 
-running a website.
+[My wee bit of the internet](https://jdd.scot) (the domain being my initials). The website serves as a combination of an online 
+identity hub and a curated profile. It is also a personal development project around operating a website.
 
-Its design is based around a CLI (command line interface) that also uses my initials. My aim is the website being 
-accessible through adherence to web standards. Also, a strong underlying semantic web structure. Supporting metadata is 
+Its design is based around a CLI (command line interface) that also uses my initials. I aim for the website being 
+accessible through adherence to web standards. Also, a strong underlying semantic structure. Supporting metadata is 
 present for search, sharing, and AI ~~theft~~ integration.
 
 I handcrafted the website using [Eleventy](https://www.11ty.dev). Go check them out!
@@ -26,7 +25,8 @@ npm install
 
 ### Build
 
-After that, you build the website with the following command. This will output the result to the *_site* directory.
+After that, you build the website with the following command. This will output the result to the *_site* directory 
+(not versioned in Git).
 
 ```bash
 npm run build
@@ -43,7 +43,7 @@ npm run lint:fix
 
 ### Start
 
-[Start a local website](http://localhost:8080) to aid in development (it will update as you code).
+[Start a local server](http://localhost:8080) to aid in any development work (it will update as you code).
 
 ```bash
 npm run start
