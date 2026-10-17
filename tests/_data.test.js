@@ -16,8 +16,8 @@ describe("jdd.json", () => {
   test("description", () => {
     assert.strictEqual(
         jdd.description,
-        "J. Douglas Dowie, a Software Engineer focused on Data Engineering, Agile, and Python. " +
-        "Ex-Engineering Manager. Scotland-based."
+        "Douglas Dowie, a Scotland-based Software Engineer with a Python and Data Engineering background. " +
+        "Ex-Engineering Manager."
     );
   });
 
