@@ -20,6 +20,15 @@ a:focus-visible, a:hover {
     text-decoration: underline;
 }
 
+article > p {
+    border: var(--border) solid var(--colour-primary);
+    border-radius: var(--border-radius);
+    box-shadow: 3px 3px var(--colour-primary);
+    margin: 0 var(--spacing-large);
+    padding: var(--spacing-small);
+    text-align: left;
+}
+
 body {
     background-color: var(--colour-secondary);
     color: var(--colour-primary);
@@ -41,7 +50,11 @@ h1 {
 }
 
 h2 {
-    margin-top: 0;
+    margin: 0;
+}
+
+h3 {
+    display: inline-flex;
 }
 
 header {
@@ -68,15 +81,6 @@ main {
   .cmd {
     animation: none;
   }
-}
-
-.content {
-    border: var(--border) solid var(--colour-primary);
-    border-radius: var(--border-radius);
-    box-shadow: 3px 3px var(--colour-primary);
-    margin: 0 var(--spacing-large);
-    padding: var(--spacing-small);
-    text-align: left;
 }
 
 .link {
