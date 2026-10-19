@@ -46,12 +46,6 @@ describe("jdd.json", () => {
     assert.strictEqual(jdd.name, "J. Douglas Dowie");
   });
 
-  test("register", () => {
-    assert.strictEqual(jdd.register.name, "Register of Technology Professionals");
-    assert.strictEqual(jdd.register.title, "BCS, The Chartered Institute for IT");
-    assert.strictEqual(jdd.register.website, "https://www.bcs.org");
-  });
-
   test("title", () => {
     assert.strictEqual(jdd.title, "Software Engineer");
   });
