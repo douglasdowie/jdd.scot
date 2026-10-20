@@ -33,44 +33,31 @@
                     of working out what comes next.
                 </p>
             </article>
-            <article id="links">
+            <section id="links">
                 <h3>
                     <span aria-hidden="true">&gt;&nbsp;jdd&nbsp;--</span>
                     <span>links</span>
                 </h3>
-                <div>
-                    <figure>
-                        <img alt="GitHub logo" class="link" height="42" src="/images/github.svg" width="42">
-                        <figcaption>
-                            <a href="{{ jdd.me.github }}" rel="me external noopener" target="_blank" >
-                                GitHub
-                            </a>
-                        </figcaption>
-                    </figure>
-                    <figure>
-                        <img alt="Email icon" class="link" height="42" src="/images/envelope.svg" width="42">
-                        <figcaption>
-                            <a href="{{ jdd.email }}" rel="me">
-                                Email
-                            </a>
-                        </figcaption>
-                    </figure>
-                    <figure>
-                        <img alt="LinkedIn logo" class="link" height="42" src="/images/linkedin.svg" width="42">
-                        <figcaption>
-                            <a href="{{ jdd.me.linkedin }}" rel="me external noopener" target="_blank">
-                                LinkedIn
-                            </a>
-                        </figcaption>
-                    </figure>
-                    <figure>
-                        <img alt="ORCID logo" class="link" height="42" src="/images/orcid.svg" width="42">
-                        <figcaption>
-                            <a href="{{ jdd.me.orcid }}" rel="me external noopener" target="_blank">
-                                ORCID
-                            </a>
-                        </figcaption>
-                    </figure>
-                </div>
-            </article>
+                <address id="code">
+                    <a href="{{ jdd.me.github }}" rel="me external noopener">
+                        <span aria-hidden="true">&lt;</span>
+                        Code
+                        <span aria-hidden="true">&gt;</span>
+                    </a>
+                </address>
+                <address id="contact">
+                    <a href="{{ jdd.email }}" rel="me">
+                        <span aria-hidden="true">[</span>
+                        Contact
+                        <span aria-hidden="true">]</span>
+                    </a>
+                </address>
+                <address id="connect">
+                    <a href="{{ jdd.me.linkedin }}" rel="me external noopener">
+                        <span aria-hidden="true">(</span>
+                        Connect
+                        <span aria-hidden="true">)</span>
+                    </a>
+                </address>
+            </section>
 {%- endblock %}
