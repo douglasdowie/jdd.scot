@@ -9,9 +9,14 @@ Its design is based around a CLI (command line interface) that also uses my init
 accessible through adherence to web standards. Also, a strong underlying semantic structure. Supporting metadata is 
 present for search, sharing, and AI ~~theft~~ integration.
 
-I handcrafted the website using [Eleventy](https://www.11ty.dev). Go check them out!
+## Community
 
-It also aligns with the [IndieWeb](https://indieweb.org).
+I handcrafted the website using [Eleventy](https://www.11ty.dev). Go check them out! I have an 
+[author page in the community](https://www.11ty.dev/authors/douglasdowie/). Also, you can find me on
+[the leaderboard](https://www.speedlify.dev/site/jdd-scot/), which tracks my progress over time (and is a bit of fun).
+
+The website also aligns with the [IndieWeb](https://indieweb.org). I am in the early days of learning about the 
+IndieWeb, owing my domain, identity and microformats.
 
 ## Setup
 
