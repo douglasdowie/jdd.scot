@@ -2,21 +2,18 @@
 
 [![Main](https://github.com/douglasdowie/jdd.scot/actions/workflows/main.yml/badge.svg)](https://github.com/douglasdowie/jdd.scot/actions/workflows/main.yml)
 
-[My wee bit of the internet](https://jdd.scot) (the domain being my initials). The website serves as a combination of an online 
-identity hub and a curated profile. It is also a personal development project around operating a website.
-
-Its design is based around a CLI (command line interface) that also uses my initials. I aim for the website being 
-accessible through adherence to web standards. Also, a strong underlying semantic structure. Supporting metadata is 
-present for search, sharing, and AI ~~theft~~ integration.
+[My wee bit of the internet](https://jdd.scot) (the domain being my initials). Its design is based around a CLI (command-line 
+interface) that also uses my initials. The website conforms to web standards and has an underlying semantic structure. 
+There is also metadata for search, sharing, and more.
 
 ## Community
 
-I handcrafted the website using [Eleventy](https://www.11ty.dev). Go check them out! I have an 
+I handcrafted the website using [Eleventy](https://www.11ty.dev). Go check it out! I have an 
 [author page in the community](https://www.11ty.dev/authors/douglasdowie/). Also, you can find me on
 [the leaderboard](https://www.speedlify.dev/site/jdd-scot/), which tracks my progress over time (and is a bit of fun).
 
 The website also aligns with the [IndieWeb](https://indieweb.org). I am in the early days of learning about the 
-IndieWeb, owing my domain, identity and microformats.
+IndieWeb, owning my domain, identity and microformats.
 
 ## Setup
 
