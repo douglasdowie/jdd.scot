@@ -10,7 +10,7 @@ on:
   workflow_dispatch:
 
 concurrency:
-  group: "pages"
+  group: pages
   cancel-in-progress: false
 
 permissions: {}
@@ -29,9 +29,7 @@ jobs:
       - name: Setup Node
         uses: actions/setup-node@949feb2413d6458794dcd2491c4babbbce0c15c1 # v7.1.0
         with:
-          cache: "npm"
-          cache-dependency-path: "package-lock.json"
-          node-version-file: "package.json"
+          node-version-file: package.json
 
       - name: Install
         run: npm ci
