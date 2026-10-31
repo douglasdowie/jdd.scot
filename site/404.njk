@@ -19,3 +19,7 @@ permalink: 404.html
                 </p>
             </article>
 {%- endblock %}
+
+{% block script %}
+        <script>document.addEventListener('DOMContentLoaded', function () { plausible('404'); });</script>
+{%- endblock %}
