@@ -33,31 +33,21 @@
                     of working out what comes next.
                 </p>
             </article>
-            <section id="links">
+            <nav id="links">
                 <h3>
                     <span aria-hidden="true">&gt;&nbsp;jdd&nbsp;--</span>
                     <span>links</span>
                 </h3>
-                <address id="code">
-                    <a href="{{ jdd.me.github }}" rel="me external noopener">
-                        <span aria-hidden="true">&lt;</span>
-                        Code
-                        <span aria-hidden="true">&gt;</span>
-                    </a>
-                </address>
-                <address id="contact">
-                    <a href="{{ jdd.email }}" rel="me">
-                        <span aria-hidden="true">[</span>
-                        Contact
-                        <span aria-hidden="true">]</span>
-                    </a>
-                </address>
-                <address id="connect">
-                    <a href="{{ jdd.me.linkedin }}" rel="me external noopener">
-                        <span aria-hidden="true">(</span>
-                        Connect
-                        <span aria-hidden="true">)</span>
-                    </a>
-                </address>
-            </section>
+                <section>
+                    <address id="code">
+                        <a href="{{ jdd.me.github }}" rel="me external noopener">Code</a>
+                    </address>
+                    <address id="contact">
+                        <a href="{{ jdd.email }}" rel="me">Contact</a>
+                    </address>
+                    <address id="connect">
+                        <a href="{{ jdd.me.linkedin }}" rel="me external noopener">Connect</a>
+                    </address>
+                </section>
+            </nav>
 {%- endblock %}
