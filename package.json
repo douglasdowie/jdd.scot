@@ -1,11 +1,22 @@
 {
-  "name": "jdd.scot",
-  "version": "1.0.0",
-  "homepage": "https://jdd.scot",
+  "author": "J. Douglas Dowie",
   "description": "My wee bit of the internet.",
+  "devDependencies": {
+    "@11ty/eleventy": "3.1.8",
+    "stylelint": "18.0.0",
+    "stylelint-config-standard": "41.0.0"
+  },
   "engines": {
     "node": "26.13.1",
     "npm": "11.20.0"
+  },
+  "homepage": "https://jdd.scot",
+  "license": "UNLICENSED",
+  "name": "jdd.scot",
+  "private": true,
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com:douglasdowie/jdd.scot.git"
   },
   "scripts": {
     "build": "npx @11ty/eleventy",
@@ -14,19 +25,6 @@
     "start": "npx @11ty/eleventy --serve",
     "test": "node --test"
   },
-  "repository": {
-    "type": "git",
-    "url": "git+ssh://git@github.com:douglasdowie/jdd.scot.git"
-  },
-  "author": "J. Douglas Dowie",
-  "license": "UNLICENSED",
-  "private": true,
   "type": "module",
-  "dependencies": {
-    "@11ty/eleventy": "3.1.8"
-  },
-  "devDependencies": {
-    "stylelint": "18.0.0",
-    "stylelint-config-standard": "41.0.0"
-  }
+  "version": "1.0.0"
 }
