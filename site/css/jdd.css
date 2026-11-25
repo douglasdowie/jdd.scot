@@ -45,18 +45,6 @@ footer {
     margin-top: var(--spacing-small);
 }
 
-h1 {
-    margin-bottom: 0;
-}
-
-h2 {
-    margin: 0;
-}
-
-h3 {
-    display: inline-flex;
-}
-
 header {
     margin-top: var(--spacing-small);
 }
