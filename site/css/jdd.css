@@ -53,6 +53,12 @@ main {
     outline: none;
 }
 
+nav > section {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(1, 1fr);
+}
+
 .cmd {
     animation-duration: 1.25s;
     animation-iteration-count: infinite;
